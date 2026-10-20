@@ -1,0 +1,12 @@
+node_modules/
+.expo/
+dist/
+web-build/
+npm-debug.log*npm run dev
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*

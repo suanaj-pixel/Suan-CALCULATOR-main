@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Calculator",
+    "slug": "calculator-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#d7ef4a"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#d7ef4a"
+      }
+    }
+  }
+}

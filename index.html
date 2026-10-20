@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d7ef4a">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <p class="eyebrow">EVERYDAY MATH, MADE CLEAR</p>
+      <h1>Calculator<span>.</span></h1>
+    </header>
+
+    <section class="calculator" aria-label="Calculator">
+      <div class="workbench">
+        <div class="display" aria-live="polite" aria-atomic="true">
+          <div class="display-topline">
+            <span class="display-label">DISPLAY</span>
+            <button class="copy-button" type="button" data-action="copy" aria-label="Copy result">Copy result</button>
+          </div>
+          <div class="expression" id="expression" aria-label="Expression">0</div>
+          <output class="result" id="result" aria-label="Result">0</output>
+        </div>
+
+        <div class="keypad" aria-label="Calculator keypad">
+          <button class="key key-dark" type="button" data-action="clear" aria-label="Clear all">C</button>
+          <button class="key key-function" type="button" data-value="(" aria-label="Open parenthesis">(</button>
+          <button class="key key-function" type="button" data-value=")" aria-label="Close parenthesis">)</button>
+          <button class="key key-function" type="button" data-value="/" aria-label="Divide">÷</button>
+
+          <button class="key" type="button" data-value="7">7</button>
+          <button class="key" type="button" data-value="8">8</button>
+          <button class="key" type="button" data-value="9">9</button>
+          <button class="key key-function" type="button" data-value="*" aria-label="Multiply">×</button>
+
+          <button class="key" type="button" data-value="4">4</button>
+          <button class="key" type="button" data-value="5">5</button>
+          <button class="key" type="button" data-value="6">6</button>
+          <button class="key key-function" type="button" data-value="-" aria-label="Subtract">−</button>
+
+          <button class="key" type="button" data-value="1">1</button>
+          <button class="key" type="button" data-value="2">2</button>
+          <button class="key" type="button" data-value="3">3</button>
+          <button class="key key-function" type="button" data-value="+" aria-label="Add">+</button>
+
+          <button class="key key-function" type="button" data-value="%" aria-label="Percent">%</button>
+          <button class="key" type="button" data-value="0">0</button>
+          <button class="key" type="button" data-value="." aria-label="Decimal point">.</button>
+          <button class="key key-dark key-equals" type="button" data-action="equals" aria-label="Equals">=</button>
+        </div>
+        <p class="status" id="status" role="status"></p>
+      </div>
+
+      <aside class="history" aria-labelledby="history-title">
+        <div class="history-heading">
+          <div>
+            <p class="display-label">RECENT WORK</p>
+            <h2 id="history-title">History</h2>
+          </div>
+          <button class="clear-history" type="button" data-action="clear-history" aria-label="Clear history">Clear</button>
+        </div>
+        <ol class="history-list" id="history-list" aria-live="polite">
+          <li class="history-empty">Your calculations will appear here.</li>
+        </ol>
+      </aside>
+    </section>
+    <footer class="page-footer">A LITTLE SPACE FOR BIG NUMBERS</footer>
+  </main>
+</body>
+</html>
